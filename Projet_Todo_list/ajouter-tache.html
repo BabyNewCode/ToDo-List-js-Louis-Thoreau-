@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Tâche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ajouter une nouvelle tâche</h1>
+    <form id="task-form" autocomplete="off">
+        <label for="title">Titre :</label>
+        <input type="text" id="title" required>
+
+        <label for="description">Description :</label>
+        <textarea id="description" required></textarea>
+
+        <label for="color">Couleur :</label>
+        <select id="color">
+            <option value="deepskyblue">Bleu</option>
+            <option value="red">Rouge</option>
+            <option value="yellow">Jaune</option>
+            <option value="lime">Vert</option>
+            <option value="violet">Violet</option>
+            <option value="orange">Orange</option>
+            <option value="fuchsia">Rose</option>
+            <option value="white">Blanc</option>
+            <option value="darkturquoise">Spécial</option>
+            </select>
+
+        <button id="b0" type="submit">Ajouter la tâche</button>
+    </form>
+
+    <button id="b1" onclick="window.location.href='index.html'">Retour à l'accueil</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

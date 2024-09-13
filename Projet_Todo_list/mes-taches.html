@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Tâches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titi">Mes Tâches</h1>
+
+    <label for="color-filter">Filtrer par couleur :</label>
+        <select id="color-filter" onchange="sortTasksByColor()">
+        <option value="all">Toutes les couleurs</option>
+        <option value="deepskyblue">Bleu</option>
+        <option value="red">Rouge</option>
+        <option value="yellow">Jaune</option>
+        <option value="lime">Vert</option>
+        <option value="violet">Violet</option>
+        <option value="orange">Orange</option>
+        <option value="fuchsia">Rose</option>
+        <option value="white">Blanc</option>
+        <option value="darkturquoise">Spécial</option>
+    </select>
+
+    <button id="b4" onclick="showConfirmation()">Clear</button>
+
+    <div id="task-list"></div>
+
+    <div id="confirmation-dialog" class="confirmation-dialog hidden">
+        <div class="confirmation-content">
+            <p>Voulez-vous vraiment supprimer toutes les tâches ?</p>
+            <button id="b3" onclick="confirmClearAll()">Oui</button>
+            <button id="b3" onclick="closeConfirmation()">Non</button>
+        </div>
+    </div>
+
+    <button id="b1" onclick="window.location.href='index.html'">Retour à l'accueil</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
